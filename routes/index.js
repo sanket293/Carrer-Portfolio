@@ -3,23 +3,23 @@ let router = express.Router();
 
 /* GET home page. */
 router.get("/", (req, res, next) => {
-  res.render("index", { title: "Sanket Vagadiya" }); // this "index" is index.ejs of view folder
+  res.render("index", { title: "Home" }); // this "index" is index.ejs of view folder
 });
 
 router.get("/about", (req, res, next) => {
-  res.render("index", { title: "About" });
+  res.render("about", { title: "About" });
 });
 
-router.get("/contact", (req, res, next) => {
-  res.render("index", { title: "Contacts" });
-});
-
-router.get("/products", (req, res, next) => {
-  res.render("index", { title: "Products" });
-});
+// router.get("/projects", (req, res, next) => {
+//   res.render("projects", { title: "Projects" });
+// });
 
 router.get("/services", (req, res, next) => {
-  res.render("index", { title: "Services" });
+  res.render("services", { title: "Services" });
 });
+
+// router.get("/contact", (req, res, next) => {
+//   res.render("index", { title: "Contact" });
+// });
 
 module.exports = router;
